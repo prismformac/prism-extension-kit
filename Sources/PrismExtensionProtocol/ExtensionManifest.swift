@@ -44,7 +44,7 @@ public struct ExtensionIcon: Hashable, Codable, Sendable {
     /// How the symbol or image is drawn.
     public enum Style: String, Hashable, Codable, Sendable {
         /// On a tinted tile, as the launcher's command icons: the glyph is
-        /// white on the tint (in dark appearance, tinted on a dark tile).
+        /// white on the tint, in either appearance.
         case tile
         /// The glyph alone in the tint, for list rows where the color says
         /// something, such as a pull request's state.
