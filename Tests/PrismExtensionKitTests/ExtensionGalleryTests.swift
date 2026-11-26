@@ -16,7 +16,7 @@ struct ExtensionGalleryIndexTests {
             extensions: [ExtensionGalleryEntry(
                 manifest: manifest,
                 package: ExtensionGalleryPackage(
-                    url: URL(string: "https://github.com/natsustan/prism-extensions/releases/download/x/sample.prismextension")!,
+                    url: URL(string: "https://github.com/prismformac/prism-extensions/releases/download/x/sample.prismextension")!,
                     sha256: "ABCDEF", size: 1234
                 ),
                 publishedAt: Date(timeIntervalSince1970: 1_799_999_000),

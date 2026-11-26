@@ -1,6 +1,6 @@
 # PrismExtensionKit
 
-The Swift package for writing [Prism](https://github.com/natsustan/prism)
+The Swift package for writing [Prism](https://prismformac.com)
 extensions, and the protocol they speak.
 
 Extensions run outside Prism and talk to it over stdio: one JSON message per
@@ -9,7 +9,7 @@ be a script with no build step, or a Swift program built with this package,
 which handles the protocol so you never touch the JSON.
 
 Extensions are published from
-[prism-extensions](https://github.com/natsustan/prism-extensions), which also
+[prism-extensions](https://github.com/prismformac/prism-extensions), which also
 has the templates, examples, and the `check` script. This repository is a
 read-only copy of `Packages/PrismExtensionKit` in the Prism repository, synced
 on each release; open issues and pull requests there.
@@ -23,7 +23,7 @@ on each release; open issues and pull requests there.
 | `PrismExtensionProtocol` | The message and manifest types, shared with Prism. |
 
 ```swift
-.package(url: "https://github.com/natsustan/prism-extension-kit.git", from: "0.1.0")
+.package(url: "https://github.com/prismformac/prism-extension-kit.git", from: "0.1.0")
 ```
 
 ## Writing an extension
