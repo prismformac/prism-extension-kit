@@ -424,6 +424,17 @@ public struct ExtensionCapability: RawRepresentable, Hashable, Codable, Sendable
     public static let spawnProcesses: Self = "spawnProcesses"
     public static let inspectProcesses: Self = "inspectProcesses"
     public static let hostTasks: Self = "hostTasks"
+
+    // Privacy permissions Prism holds. macOS counts an extension's process as
+    // Prism's, so an extension can use them without asking; declaring the ones
+    // it uses lets the Gallery review them and makes an update that adds one
+    // wait for the user's consent. Older Prism builds show unknown values as
+    // declared and still review them, so these are additive.
+    public static let accessibility: Self = "accessibility"
+    public static let appleEvents: Self = "appleEvents"
+    public static let calendars: Self = "calendars"
+    public static let reminders: Self = "reminders"
+    public static let microphone: Self = "microphone"
 }
 
 /// The declarative description of an extension: its `manifest.json`.
